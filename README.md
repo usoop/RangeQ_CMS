@@ -35,8 +35,14 @@ A range query computes the sum of the frequencies for all the elements between a
 ### Dyadic Intervals and Dyadic Trees
 
 Given $x \in \mathbb{N}$ and $y \in \mathbb{N}_0$, a dyadic interval is defined as:
+$y$代表从下往上第几层，从0开始取，$x$代表当前层从左往右数第几个节点。
+
+如果在第$y$层，那么每个interval的大小都会是$2^y$，那么第$x$个节点的interval就会是$(x-1)*2^y+1$到$x*2^y$
+所以计算公式是：
 
 $$ D_{x,y} = [(x-1)2^y+1, \, x2^y] $$
+
+
 
 Given an interval $[1,n]$, where $n$ is a power of 2, we can construct a binary tree with all the dyadic intervals contained in $[1,n]$ as follows:
 
