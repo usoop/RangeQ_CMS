@@ -9,7 +9,7 @@ def dyadic_interval(x,y):
     Obtain the left and right values of a Dyadic Range,
     following the next formula:
 
-        Dx,y = [((x - 1) * 2) ^ y  + 1, (x * 2) ^ y]
+        D(x,y) = [ (x - 1) * 2 ^ y  + 1, x * (2 ^ y) ]
 
     The function recieves the two parameters x and y.
 
